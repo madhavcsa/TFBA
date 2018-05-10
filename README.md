@@ -26,9 +26,9 @@ This package contains the following files:
 	optional arguments: </br>
 		  -h, --help            show this help message and exit </br>
 		  --minLambda MINLAMBDA [MINLAMBDA ...] </br>
-				        * Enter the min lambda (list), default = 0.1 0.1 0.1 </br>
+				        ** Enter the min lambda (list), default = 0.1 0.1 0.1 </br>
 		  --maxLambda MAXLAMBDA [MAXLAMBDA ...] </br>
-				       * Enter the max lambda (list), needed only for grid
+				       ** Enter the max lambda (list), needed only for grid
 				        search. If no grid search, provide only minLambda option.
 		  --step STEP           Enter the step size for grid search (default = 0.5) </br>
 		  --maxIters MAXITERS   Enter the maximum iterations (default = 10) </br>
