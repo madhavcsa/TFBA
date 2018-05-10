@@ -20,9 +20,9 @@ This package contains the following files:
  	--- 3-tuples can also be provided in the same file along with 4-tuples, in which case use the string "<na>" for other. </br>
 	--- This script will create pkl files in the output directory. </br>
 
-2. python2.7 factorize.py <data_dir> <output_dir> [other options]
-	-- Performs the factorization and store the latent factor matrices and core tensors in the <output_dir> directory.
-	-- <data_dir> should be same as the <output_dir> of dataGen.py.
+* python2.7 factorize.py <data_dir> <output_dir> [other options]</br>
+	--- Performs the factorization and store the latent factor matrices and core tensors in the <output_dir> directory.
+	--- <data_dir> should be same as the <output_dir> of dataGen.py.
 	optional arguments:
 		  -h, --help            show this help message and exit
 		  --minLambda MINLAMBDA [MINLAMBDA ...]
@@ -39,7 +39,7 @@ This package contains the following files:
 		  --cores CORES         Number of Threads
 
 
-3. python2.7 cliqueMine.py <data_dir> <output_dir> --rank r1 r2 r3
-	-- Performs constrained clique mining and stores the schemas in <output_dir>
-	-- <data_dir> should be same as <data_dir> used to run Factorize.py
+* python2.7 cliqueMine.py <data_dir> <output_dir> --rank r1 r2 r3 </br>
+	--- Performs constrained clique mining and stores the schemas in <output_dir>
+	--- <data_dir> should be same as <data_dir> used to run Factorize.py
 		
