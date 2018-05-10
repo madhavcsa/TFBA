@@ -2,23 +2,23 @@
 
 Codes for "Higher Order Relation Schema Induction".
 
-Prerequisites:
+## Prerequisites:
 install sktensor (https://github.com/mnick/scikit-tensor)
 
 This package contains the following files:
 
-dataGen.py -- Used to generate tensors from the set of tuples.
-factorize.py -- Joint tensor factorization.
-cliqueMine.py -- Constrained Clique mining.
+* dataGen.py -- Used to generate tensors from the set of tuples.
+* factorize.py -- Joint tensor factorization.
+* cliqueMine.py -- Constrained Clique mining.
 
 
-Running Instructions:
+## Running Instructions:
 
-1. python2.7 dataGen.py <tuples_file> <output_dir> 
-	-- Each line in the input file is a tab separated 4-tuple of the format 
+* python2.7 dataGen.py <tuples_file> <output_dir> </br>
+	** Each line in the input file is a tab separated 4-tuple of the format 
 		subject "\t" relation "\t" object "\t" other "\t" frequency.
- 	-- 3-tuples can also be provided in the same file along with 4-tuples, in which case use the string "<na>" for other. 
-	-- This script will create pkl files in the output directory. 
+ 	** 3-tuples can also be provided in the same file along with 4-tuples, in which case use the string "<na>" for other. 
+	** This script will create pkl files in the output directory. 
 
 2. python2.7 factorize.py <data_dir> <output_dir> [other options]
 	-- Performs the factorization and store the latent factor matrices and core tensors in the <output_dir> directory.
