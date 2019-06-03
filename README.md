@@ -12,15 +12,15 @@ This package contains the following files:
 * cliqueMine.py -- Constrained Clique mining.
 
 
-## Running Instructions:
+## Usage:
 
-* python2.7 dataGen.py <tuples_file> <output_dir> </br>
+$ python2.7 dataGen.py <tuples_file> <output_dir> </br>
 	--- Each line in the input file is a tab separated 4-tuple of the format 
 		subject "\t" relation "\t" object "\t" other "\t" frequency. </br>
  	--- 3-tuples can also be provided in the same file along with 4-tuples, in which case use the string "<na>" for other. </br>
 	--- This script will create pkl files in the output directory. </br>
 
-* python2.7 factorize.py <data_dir> <output_dir> [other options]</br>
+$ python2.7 factorize.py <data_dir> <output_dir> [other options]</br>
 	--- Performs the factorization and store the latent factor matrices and core tensors in the <output_dir> directory. </br>
 	--- <data_dir> should be same as the <output_dir> of dataGen.py. </br>
 	optional arguments: </br>
@@ -39,7 +39,7 @@ This package contains the following files:
 		  --cores CORES         Number of Threads </br>
 
 
-* python2.7 cliqueMine.py <data_dir> <output_dir> --rank r1 r2 r3 </br>
+$ python2.7 cliqueMine.py <data_dir> <output_dir> --rank r1 r2 r3 </br>
 	--- Performs constrained clique mining and stores the schemas in <output_dir> </br>
 	--- <data_dir> should be same as <data_dir> used to run Factorize.py
 	
